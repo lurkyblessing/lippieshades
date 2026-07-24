@@ -283,73 +283,60 @@ body {
     display: block;
 }
 
-/* Section Divider */
-.section-divider {
-    border: 0;
-    height: 1px;
-    background-color: var(--border-color);
-    margin: 40px 5%;
+/* Expansive Marketing Plan Section */
+.marketing-plan {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
 }
 
-/* Marketing Plan FAQ Section */
-.marketing-plan-section {
-    padding: 40px 5% 80px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.marketing-title {
-    font-size: 2.5rem;
+.marketing-plan h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 80px;
     font-weight: 700;
-    margin-bottom: 15px;
-    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-.marketing-intro {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 1.1rem;
-    color: var(--text-light);
-}
-
-.faq-accordion {
-    border-top: 2px solid var(--text-dark);
-}
-
-.faq-header {
-    width: 100%;
+.campaign-phase {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    background: none;
-    border: none;
-    border-bottom: 1px solid var(--border-color);
-    font-size: 1.2rem;
-    font-weight: 700;
-    cursor: pointer;
+    gap: 60px;
+    margin-bottom: 100px;
 }
 
-.faq-content {
-    display: none;
-    padding: 20px 0;
-    border-bottom: 1px solid var(--border-color);
-    color: var(--text-dark);
-    font-size: 1rem;
+.campaign-phase.reverse {
+    flex-direction: row-reverse;
 }
 
-.faq-content.open {
-    display: block;
+.phase-text {
+    flex: 1;
 }
 
-.faq-content ul {
-    padding-left: 20px;
-    margin-top: 15px;
+.phase-text h3 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.phase-text p {
+    font-size: 1.25rem;
     color: var(--text-light);
+    margin-bottom: 20px;
+    line-height: 1.8;
 }
 
-.faq-content li {
-    margin-bottom: 10px;
+.phase-media {
+    flex: 1;
+}
+
+.phase-media video,
+.phase-media img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: block;
 }
 
 /* Footer */
@@ -369,6 +356,13 @@ footer {
     .nav-left, .nav-right {
         width: 100%;
         justify-content: center;
+    }
+    .campaign-phase {
+        flex-direction: column;
+        text-align: center;
+    }
+    .campaign-phase.reverse {
+        flex-direction: column;
     }
 }
 
