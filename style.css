@@ -126,70 +126,23 @@ body {
 }
 
 .product-gallery {
-    flex: 1.5;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    align-content: start;
 }
 
-.main-image {
+.gallery-item {
     width: 100%;
-    border-radius: 4px;
-    background: #f8f8f8;
     aspect-ratio: 1/1;
-    overflow: hidden;
-}
-
-.media-item {
-    display: none;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
-}
-
-.media-item.active {
-    display: block;
-}
-
-model-viewer {
-    width: 100%;
-    height: 100%;
-    background-color: #f8f8f8;
-}
-
-.thumbnail-list {
-    display: flex;
-    gap: 15px;
-}
-
-.thumbnail {
-    width: 80px;
-    height: 80px;
-    border: 2px solid transparent;
-    cursor: pointer;
-    border-radius: 4px;
-    position: relative;
-    overflow: hidden;
     background: #f8f8f8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 4px;
 }
 
-.thumbnail img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.thumb-icon {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-dark);
-}
-
-.thumbnail.active {
-    border-color: var(--text-dark);
+.gallery-item.full-width {
+    grid-column: span 2;
+    aspect-ratio: 16/9;
 }
 
 /* Buy Box */

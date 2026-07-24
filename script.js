@@ -31,31 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Image Gallery Logic
-    const mediaItems = document.querySelectorAll('.media-item');
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    const mainImg = document.getElementById('main-product-img');
-
-    thumbnails.forEach(thumb => {
-        thumb.addEventListener('click', () => {
-            // Update active state on thumbnails
-            thumbnails.forEach(t => t.classList.remove('active'));
-            thumb.classList.add('active');
-
-            // Hide all media items
-            mediaItems.forEach(item => item.classList.remove('active'));
-
-            // Show targeted media item
-            const targetId = thumb.getAttribute('data-target');
-            const targetElement = document.getElementById(targetId);
-            targetElement.classList.add('active');
-
-            // If it's an image, also update the src if provided
-            if (targetId === 'main-product-img' && thumb.getAttribute('data-src')) {
-                targetElement.src = thumb.getAttribute('data-src');
-            }
-        });
-    });
+    // The image gallery is now a static grid, no JS needed for thumbnails.
 
     // Product Details Accordion Logic
     const accordions = document.querySelectorAll('.accordion-header');
