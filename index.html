@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e.l.f. Stash & Stain Lippie Shades | Product & Marketing Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        marketing + product design by fuckshitpoet
+    </div>
+
+    <!-- E-commerce Navbar (Black Header) -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#">🔥 What's Hot</a>
+            <a href="#">✨ Hair</a>
+            <a href="#">💄 Makeup</a>
+            <a href="#">💧 Skincare</a>
+            <a href="#">🔍 Discover</a>
+        </div>
+        <div class="nav-center">
+            <img src="file:///Users/blessingbafunso/.gemini/antigravity/brain/22b74849-fc0e-4da8-9089-44bb4bbad095/.user_uploaded/media__1784777275483.png" class="logo" alt="e.l.f. logo">
+        </div>
+        <div class="nav-right">
+            <a href="#" class="beauty-squad">👥 Beauty Squad</a>
+            <div class="search-bar">
+                <span>🔍</span> <input type="text" placeholder="Search">
+            </div>
+            <div class="nav-icons">
+                <span>🇺🇸</span>
+                <span>👤</span>
+                <span>🛍️</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        Home / Makeup / Lips / <strong>Stash & Stain Lippie Shades</strong>
+    </div>
+
+    <!-- Main Product Section -->
+    <main class="pdp-container">
+        <!-- Left: Image Gallery -->
+        <div class="product-gallery">
+            <div class="main-image" id="media-container">
+                <img src="file:///Users/blessingbafunso/.gemini/antigravity/brain/22b74849-fc0e-4da8-9089-44bb4bbad095/chic_sunglasses_v3_1781357349228.png" id="main-product-img" class="media-item active" alt="Stash & Stain Lippie Shades Main Image">
+                <div id="main-product-3d" class="media-item"></div>
+                <video src="elf_mockup.mp4" id="main-product-video" class="media-item" controls muted autoplay loop playsinline></video>
+            </div>
+            <div class="thumbnail-list">
+                <div class="thumbnail active" data-target="main-product-img" data-src="file:///Users/blessingbafunso/.gemini/antigravity/brain/22b74849-fc0e-4da8-9089-44bb4bbad095/chic_sunglasses_v3_1781357349228.png">
+                    <img src="file:///Users/blessingbafunso/.gemini/antigravity/brain/22b74849-fc0e-4da8-9089-44bb4bbad095/chic_sunglasses_v3_1781357349228.png" alt="Thumb 1">
+                </div>
+                <div class="thumbnail" data-target="main-product-3d">
+                    <div class="thumb-icon">3D</div>
+                </div>
+                <div class="thumbnail" data-target="main-product-video">
+                    <div class="thumb-icon">▶</div>
+                </div>
+                <div class="thumbnail" data-target="main-product-img" data-src="file:///Users/blessingbafunso/.gemini/antigravity/brain/22b74849-fc0e-4da8-9089-44bb4bbad095/mockup_straight_reveal_1781324522433.png">
+                    <img src="file:///Users/blessingbafunso/.gemini/antigravity/brain/22b74849-fc0e-4da8-9089-44bb4bbad095/mockup_straight_reveal_1781324522433.png" alt="Thumb 2">
+                </div>
+                <div class="thumbnail" data-target="main-product-img" data-src="file:///Users/blessingbafunso/.gemini/antigravity/brain/22b74849-fc0e-4da8-9089-44bb4bbad095/marker_tip_closeup_1781324236853.png">
+                    <img src="file:///Users/blessingbafunso/.gemini/antigravity/brain/22b74849-fc0e-4da8-9089-44bb4bbad095/marker_tip_closeup_1781324236853.png" alt="Thumb 3">
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Buy Box -->
+        <div class="buy-box">
+            <span class="badge">NEW</span>
+            <h1 class="product-title">Stash & Stain Lippie Shades</h1>
+            <div class="reviews">⭐⭐⭐⭐⭐ (4.8) 128 Reviews</div>
+            <div class="price">$77.77</div>
+            <p class="product-subtitle"><strong>Ready for sun-thing special?</strong><br>Fashion forward sunglasses with a buildable, long-lasting lip stain marker that lines, contours and fills in your lips for transfer-resistant color and a natural-looking finish.</p>
+
+            <!-- Shades Selection -->
+            <div class="shade-selector">
+                <div class="shade-label">Shade: <strong id="selected-shade">Balletcore - baby pink</strong></div>
+                <div class="swatches">
+                    <button class="swatch active" style="background-color: #ffb6c1;" data-shade="Balletcore - baby pink" title="Balletcore"></button>
+                    <button class="swatch" style="background-color: #c97f9f;" data-shade="Mauvelous - mauve" title="Mauvelous"></button>
+                    <button class="swatch" style="background-color: #df8f95;" data-shade="Rose Macaron - rosy pink" title="Rose Macaron"></button>
+                    <button class="swatch" style="background-color: #c65961;" data-shade="Gone Garnet - red" title="Gone Garnet"></button>
+                    <button class="swatch" style="background-color: #c18471;" data-shade="Beigebait - soft nude beige" title="Beigebait"></button>
+                </div>
+                <select class="shade-dropdown" id="shade-dropdown">
+                    <option value="Balletcore - baby pink">Balletcore - baby pink</option>
+                    <option value="Mauvelous - mauve">Mauvelous - mauve</option>
+                    <option value="Rose Macaron - rosy pink">Rose Macaron - rosy pink</option>
+                    <option value="Gone Garnet - red">Gone Garnet - red</option>
+                    <option value="Beigebait - soft nude beige">Beigebait - soft nude beige</option>
+                </select>
+            </div>
+
+            <!-- Add to Cart -->
+            <button class="add-to-bag">Add to Bag</button>
+
+            <!-- Accordions -->
+            <div class="accordion">
+                <button class="accordion-header">Description <span>+</span></button>
+                <div class="accordion-content">
+                    <p>Suns up, pouts out with our new Stash & Stain Lippie Shades. Never get caught lacking on a beach day again. With a vibrant felt tip lippie hidden on your cute new sunnies, it’s easier than ever to sculpt, shade and fill in your lips on the go. So no matter what the e.l.f. life throws your way, your lip combo is locked and loaded.</p>
+                </div>
+
+                <button class="accordion-header">How to Use <span>+</span></button>
+                <div class="accordion-content">
+                    <p>1. Wear as chic sunglasses to block the haters.<br>2. When you need a touch-up, pull the end cap off the right temple arm.<br>3. Use the precision felt tip to line, shape, and fill lips.<br>4. Snap the cap back on and go!</p>
+                </div>
+
+                <button class="accordion-header">Ingredients <span>+</span></button>
+                <div class="accordion-content">
+                    <p>Hydrating formula featuring Vitamin E and Jojoba Oil for a life-proof, transfer-resistant stain that lasts all day.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <hr class="section-divider">
+
+    <!-- Marketing Plan Section (FAQ Style) -->
+    <section class="marketing-plan-section">
+        <h2 class="marketing-title">The Marketing Plan</h2>
+        <p class="marketing-intro">Detailed campaign rollout strategy for Stash & Stain Lippie Shades. Click to expand each phase.</p>
+
+        <div class="faq-accordion">
+            <!-- Campaign 1 -->
+            <button class="faq-header">Phase 1: e.l.f.chella <span>+</span></button>
+            <div class="faq-content">
+                <p><strong>The Strategy:</strong> A massive influencer seeding push leading up to the biggest music festival of the year.</p>
+                <ul>
+                    <li>We send PR packages of Stash & Stain Lippie Shades to a curated list of influencers attending Coachella.</li>
+                    <li>They post content wearing the glasses and doing the "lip stain reveal" leading up to the festival to build hype.</li>
+                    <li><strong>The Activation:</strong> We host a massive e.l.f.chella pop-up tent on the festival grounds where attendees can test shades, take photos, and buy the product live.</li>
+                </ul>
+            </div>
+
+            <!-- Campaign 2 -->
+            <button class="faq-header">Phase 2: e.l.f. it's hot! <span>+</span></button>
+            <div class="faq-content">
+                <p><strong>The Strategy:</strong> Capitalize on the start of summer with a high-foot-traffic physical activation.</p>
+                <ul>
+                    <li>Planned for the Summer Solstice (the longest, sunniest day of the year).</li>
+                    <li><strong>The Activation:</strong> A vibrant pop-up or hand-out event at a major cultural hub like Washington Square Park (WSP) or Jones Beach.</li>
+                    <li>We hand out Stash & Stain Lippie Shades alongside complementary e.l.f. skincare products with high SPF (like Suntouchable! Whoa Glow), emphasizing the "Sun" and "Shade" aspects of the campaign.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Footer -->
+    <footer>
+        <p>&copy; 2026 e.l.f. Cosmetics x fuckshitpoet Conceptual Pitch Mockup.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="three-viewer.js"></script>
+</body>
+</html>
